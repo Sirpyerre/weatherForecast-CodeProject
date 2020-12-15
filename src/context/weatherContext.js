@@ -20,8 +20,6 @@ const getWeatherData = dispatch => async location => {
         url: `weather?q=${location}&appid=${api_key}`
     });
 
-    console.log(response.data);
-
     dispatch({type: 'set_weather', payload: response.data});
 }
 
@@ -31,7 +29,7 @@ const getForecast = dispatch => async location => {
         url: `forecast?q=${location}&appid=${api_key}`
     });
 
-    console.log(response.data);
+    console.log("response Forecast",response.data);
 
     dispatch({type: 'set_forecast', payload: response.data});
 }

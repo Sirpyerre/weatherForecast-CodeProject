@@ -4,14 +4,14 @@
     margin: 2rem 1rem 0 2rem;
 }
 
-.weatherTemperatureCont{
+.weatherCont{
     color: rgb(255,72,0);
     font-size: 3rem;
     display: block;
     text-align: center;
 }
 
-.weatherTemperatureCont svg{
+.weatherCont svg{
     font-size: 5rem;
 }
 
@@ -34,4 +34,29 @@
 
 .wind-speed {
     color: black;
+}
+
+.forecast{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.forecast-daily{
+    padding: 0 1rem 0 1rem;
+}
+
+.weatherItem {
+    color: rgb(255,72,0);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.weatherItem svg{
+    font-size: 3rem;
+}
+
+.weatherItem .humidity{
+    flex-grow: 4;
 }

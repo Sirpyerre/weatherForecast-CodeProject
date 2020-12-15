@@ -2,6 +2,8 @@ import { WiDayThunderstorm,WiRainWind, WiDaySunny,WiDayShowers,
     WiDaySnowWind,
     WiDayFog,
     WiSmoke,
+    WiCloudy,
+
 
 } from "react-icons/wi";
 
@@ -34,7 +36,7 @@ const WeatherIcons = ({name})=>{
         case 'Tornado':
             return <WiRainWind/>
         case 'Clouds':
-            return <WiRainWind/>
+            return <WiCloudy/>
         default:
             return <WiDaySunny/>
 

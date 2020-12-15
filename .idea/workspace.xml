@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="884bb140-e683-4499-a43f-3bb2f37b7455" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/HumidityWind.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WeatherIcons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WeatherTemperature.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Details.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Graph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WeatherDetailItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WeatherState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WeatherSummary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/weathers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/weathers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HumidityWind.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HumidityWind.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherIcons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherIcons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherTemperature.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/weatherContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/weatherContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -50,6 +52,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
@@ -81,7 +86,8 @@
       <updated>1607991943496</updated>
       <workItem from="1607991944728" duration="3035000" />
       <workItem from="1608001333527" duration="4913000" />
-      <workItem from="1608007894062" duration="5881000" />
+      <workItem from="1608007894062" duration="10731000" />
+      <workItem from="1608051273217" duration="2517000" />
     </task>
     <servers />
   </component>
