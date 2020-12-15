@@ -1,9 +1,10 @@
 import {Form, Input} from 'antd';
 
-function Filter() {
+function Filter({getData}) {
 
     const onFinish = values => {
         console.log('Success:', values);
+        getData(values.location);
     };
 
 

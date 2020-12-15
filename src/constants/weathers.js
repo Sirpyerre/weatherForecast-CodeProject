@@ -1,11 +1,17 @@
-export const CLOUD = "cloud";
+export const CLOUD = "Cloud";
 
-export const SUN = "sun";
+export const CLOUDS = "Clouds";
 
-export const RAIN = "rain";
+export const SUN = "Sun";
 
-export const SNOW = "snow";
+export const RAIN = "Rain";
 
-export const THUNDER = "thunder";
+export const SNOW = "Snow";
 
-export const DRIZZLE = "drizzle";
+export const THUNDER = "Thunder";
+
+export const DRIZZLE = "Drizzle";
+
+export const MIST = "Mist"
+
+export const CLEAR = "Clear"
