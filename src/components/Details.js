@@ -27,7 +27,7 @@ const DetailsForecast = ({list}) => {
 }
 
 DetailsForecast.propTypes = {
-    list: PropTypes.object.isRequired,
+    list: PropTypes.array.isRequired,
 };
 
 export default DetailsForecast

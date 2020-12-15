@@ -38,7 +38,7 @@ function App() {
                         {
                             Object.keys(state.forecast).length > 0 ? (
                                 <>
-                                    <Graph data={state.forecast.list}/>
+                                    <Graph list={state.forecast.list}/>
                                     <DetailsForecast list={state.forecast.list}/>
                                 </>
                             ) : null
