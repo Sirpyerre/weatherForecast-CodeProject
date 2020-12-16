@@ -4,10 +4,8 @@ function Filter({getData, getForecast}) {
 
     const onFinish = values => {
         getData(values.location);
-        setTimeout(()=> {
-            console.log("timeout");
+        setTimeout(() => {
             getForecast(values.location)
-            console.log("getForecast");
         }, 900);
     };
 

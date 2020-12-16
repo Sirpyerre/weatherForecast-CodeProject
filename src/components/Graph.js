@@ -5,22 +5,21 @@ import classes from "./lineChart.css";
 
 const Graph = ({list}) => {
     const chartRef = useRef(null);
-    const [chartInstance, setChartInstance] = useState(null);
+    const [, setChartInstance] = useState(null);
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const chartData = {
         type: 'line',
     };
 
-    let dataset = {};
     let labels = [];
     let data = [];
 
     list.filter(reading => reading.dt_txt.includes("18:00:00"))
         .map(item => {
-
             labels.push(item.main.temp);
             data.push(item.main.temp);
-
+            return 0;
         })
 
     chartData.data = {
@@ -33,14 +32,12 @@ const Graph = ({list}) => {
         ]
     }
 
-    console.log(data)
-
     useEffect(() => {
         if (chartRef && chartRef.current) {
             const newChartInstance = new Chartjs(chartRef.current, chartData);
             setChartInstance(newChartInstance);
         }
-    }, [chartRef]);
+    }, [chartData, chartRef]);
 
     return (
         <div className={classes.graphContainer}>

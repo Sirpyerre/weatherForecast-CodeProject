@@ -28,7 +28,7 @@ function App() {
                                 wind={state.data.wind}
                                 main={state.data.main}
                             />
-                            : <p>sin datos</p>
+                            : null
                     }
 
                 </Col>
