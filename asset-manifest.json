@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/weatherForecast-CodeProject/static/css/main.796f5879.chunk.css",
+    "main.js": "/weatherForecast-CodeProject/static/js/main.e4b7cf7a.chunk.js",
+    "main.js.map": "/weatherForecast-CodeProject/static/js/main.e4b7cf7a.chunk.js.map",
+    "runtime-main.js": "/weatherForecast-CodeProject/static/js/runtime-main.ba8caae3.js",
+    "runtime-main.js.map": "/weatherForecast-CodeProject/static/js/runtime-main.ba8caae3.js.map",
+    "static/css/2.63c3720a.chunk.css": "/weatherForecast-CodeProject/static/css/2.63c3720a.chunk.css",
+    "static/js/2.ecd30f1c.chunk.js": "/weatherForecast-CodeProject/static/js/2.ecd30f1c.chunk.js",
+    "static/js/2.ecd30f1c.chunk.js.map": "/weatherForecast-CodeProject/static/js/2.ecd30f1c.chunk.js.map",
+    "static/js/3.e3748583.chunk.js": "/weatherForecast-CodeProject/static/js/3.e3748583.chunk.js",
+    "static/js/3.e3748583.chunk.js.map": "/weatherForecast-CodeProject/static/js/3.e3748583.chunk.js.map",
+    "index.html": "/weatherForecast-CodeProject/index.html",
+    "static/css/2.63c3720a.chunk.css.map": "/weatherForecast-CodeProject/static/css/2.63c3720a.chunk.css.map",
+    "static/css/main.796f5879.chunk.css.map": "/weatherForecast-CodeProject/static/css/main.796f5879.chunk.css.map",
+    "static/js/2.ecd30f1c.chunk.js.LICENSE.txt": "/weatherForecast-CodeProject/static/js/2.ecd30f1c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba8caae3.js",
+    "static/css/2.63c3720a.chunk.css",
+    "static/js/2.ecd30f1c.chunk.js",
+    "static/css/main.796f5879.chunk.css",
+    "static/js/main.e4b7cf7a.chunk.js"
+  ]
+}
