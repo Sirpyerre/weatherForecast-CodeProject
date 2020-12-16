@@ -13,24 +13,36 @@ const weatherReducer = (state, action) => {
     }
 }
 
-const getWeatherData = dispatch => async location => {
+const getWeatherData = dispatch => async place => {
+    console.log("place:", place);
+    let uri = '';
+    if (place.location) {
+        uri = `weather?q=${place.location}`;
+    }else if(place.latitude && place.longitude) {
+        uri = `weather?lat=${place.latitude}&lon=${place.longitude}`;
+    }
 
     const response = await weatherApi({
         method: 'get',
-        url: `weather?q=${location}&appid=${api_key}`
+        url: `${uri}&appid=${api_key}`
     });
 
     dispatch({type: 'set_weather', payload: response.data});
 }
 
-const getForecast = dispatch => async location => {
+const getForecast = dispatch => async place => {
+    console.log("place:", place);
+    let uri = '';
+    if (place.location) {
+        uri = `forecast?q=${place.location}`;
+    } else if(place.latitude && place.longitude) {
+        uri = `forecast?lat=${place.latitude}&lon=${place.longitude}`;
+    }
+
     const response = await weatherApi({
         method: 'get',
-        url: `forecast?q=${location}&appid=${api_key}`
+        url: `${uri}&appid=${api_key}`
     });
-
-    console.log("response Forecast",response.data);
-
     dispatch({type: 'set_forecast', payload: response.data});
 }
 

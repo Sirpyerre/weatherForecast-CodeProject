@@ -4,9 +4,12 @@
     <list default="true" id="884bb140-e683-4499-a43f-3bb2f37b7455" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Graph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Graph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/createDataContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/createDataContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/weatherContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/weatherContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +52,27 @@
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.deploy">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="predeploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="predeploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -62,6 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.predeploy" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -78,7 +103,7 @@
       <workItem from="1608001333527" duration="4913000" />
       <workItem from="1608007894062" duration="10731000" />
       <workItem from="1608051273217" duration="7348000" />
-      <workItem from="1608077460806" duration="649000" />
+      <workItem from="1608077460806" duration="6314000" />
     </task>
     <servers />
   </component>

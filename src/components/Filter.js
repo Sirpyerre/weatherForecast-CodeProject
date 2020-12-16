@@ -1,13 +1,8 @@
 import {Form, Input} from 'antd';
 
-function Filter({getData, getForecast}) {
+function Filter({onFinish}) {
 
-    const onFinish = values => {
-        getData(values.location);
-        setTimeout(() => {
-            getForecast(values.location)
-        }, 900);
-    };
+
 
     return (
         <div className="filter">

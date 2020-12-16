@@ -1,4 +1,4 @@
-import {useContext} from 'react';
+import {useContext, useState, useEffect} from 'react';
 import {Layout, Col, Row} from 'antd';
 import './App.css';
 import Filter from "./components/Filter";
@@ -6,20 +6,44 @@ import {Context as WeatherContext} from './context/weatherContext'
 import WeatherSummary from "./components/WeatherSummary";
 import Graph from "./components/Graph";
 import DetailsForecast from "./components/Details";
-
-// const {Content} = Layout;
+import {usePosition} from 'use-position';
 
 function App() {
     const {state, getWeatherData, getForecast} = useContext(WeatherContext);
+    const watch = true;
 
-    console.log("state", state)
+    const {
+        latitude,
+        longitude,
+    } = usePosition(watch);
+
+    useEffect(()=>{
+        if (latitude && longitude) {
+            const place = {
+                latitude,
+                longitude
+            };
+            console.log("coodinates", place);
+            getWeatherData(place);
+            setTimeout(() => {
+                getForecast(place)
+            }, 900);
+        }
+    }, [latitude, longitude]);
+
+    const onFinish = values => {
+        getWeatherData(values);
+        setTimeout(() => {
+            getForecast(values)
+        }, 900);
+    };
+
     return (
         <Layout>
             <Row>
-                <Col span={6}>
+                <Col lg={6} md={6} xs={24}>
                     <Filter
-                        getData={getWeatherData}
-                        getForecast={getForecast}
+                       onFinish={onFinish}
                     />
                     {
                         Object.keys(state.data).length > 0 ?
@@ -32,7 +56,7 @@ function App() {
                     }
 
                 </Col>
-                <Col span={18}>
+                <Col lg={18} md={18} xs={24}>
                     {/*<Content className="site-layout" style={{padding: '0 50px', marginTop: 64}}>*/}
                     <div className="site-layout-background" style={{padding: 24, minHeight: 380}}>
                         {

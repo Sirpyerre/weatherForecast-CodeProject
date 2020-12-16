@@ -32,12 +32,12 @@ const Graph = ({list}) => {
         ]
     }
 
-    useEffect(() => {
-        if (chartRef && chartRef.current) {
-            const newChartInstance = new Chartjs(chartRef.current, chartData);
-            setChartInstance(newChartInstance);
-        }
-    }, [chartData, chartRef]);
+    // useEffect(() => {
+    //     if (chartRef && chartRef.current) {
+    //         const newChartInstance = new Chartjs(chartRef.current, chartData);
+    //         setChartInstance(newChartInstance);
+    //     }
+    // }, [chartData, chartRef]);
 
     return (
         <div className={classes.graphContainer}>
